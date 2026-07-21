@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An interactive journey through the evolution of music, from the first instruments to 2026."
+    />
+    <title>Music History — The Long Play</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scroll-meter" aria-hidden="true">
+      <span id="scrollMeter"></span>
+    </div>
+
+    <header class="site-header wrap">
+      <div class="status">version 1.2</div>
+      <div class="header-row">
+        <h1>music history</h1>
+        <div class="header-meta">
+          <p><span class="update-icon">↻</span> updated 2026</p>
+          <p>scroll to travel through sound <span class="scroll-arrow">↓</span></p>
+        </div>
+      </div>
+      <div class="header-rule"></div>
+
+      <div class="controls" aria-label="Display controls">
+        <button
+          class="control"
+          id="themeToggle"
+          type="button"
+          aria-label="Switch to light mode"
+        >
+          <span aria-hidden="true">◐</span> theme: <strong>dark</strong>
+        </button>
+      </div>
+
+      <nav class="era-nav" aria-label="Music eras">
+        <a href="#origins" class="active">origins</a>
+        <a href="#ancient">ancient</a>
+        <a href="#classical">classical</a>
+        <a href="#recorded">recorded</a>
+        <a href="#digital">digital</a>
+        <a href="#now">now</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro wrap">
+        <p class="eyebrow">THE LONG PLAY</p>
+        <div class="intro-row">
+          <h2>how sound became culture</h2>
+          <p>
+            A selective journey through the inventions and ideas that changed
+            how humanity creates, captures, and shares sound.
+          </p>
+        </div>
+        <p class="research-note">
+          <span>→</span> follow each milestone to continue exploring
+        </p>
+      </section>
+
+      <section
+        class="timeline wrap"
+        id="timeline"
+        aria-label="Music history timeline"
+      >
+        <div class="timeline-spine" aria-hidden="true">
+          <span id="timelineProgress"></span>
+        </div>
+
+        <article
+          class="moment left"
+          id="origins"
+          data-era="origins"
+          data-index="01"
+        >
+          <span class="index">01</span><span class="node"></span>
+          <div class="card">
+            <p class="year">40,000 BCE —</p>
+            <h3>FIRST INSTRUMENTS</h3>
+            <p class="summary">bone flutes / ritual / memory</p>
+            <p class="detail">
+              Music begins before written language. Hollow bird bones become
+              flutes, and rhythm turns gathering into ceremony.
+            </p>
+            <a class="read-more" href="https://www.google.com/search?q=earliest+prehistoric+musical+instruments+bone+flutes" target="_blank" rel="noopener noreferrer">read more ↗</a>
+            <span class="tag">origins</span>
+          </div>
+        </article>
+
+        <article
+          class="moment right"
+          id="ancient"
+          data-era="ancient"
+          data-index="02"
+        >
+          <span class="index">02</span><span class="node"></span>
+          <div class="card">
+            <p class="year">3,000 BCE —</p>
+            <h3>WRITTEN SOUND</h3>
+            <p class="summary">Mesopotamia / notation / ceremony</p>
+            <p class="detail">
+              Songs move beyond memory. Early notation preserves tuning systems
+              and makes musical knowledge transferable.
+            </p>
+            <a class="read-more" href="https://www.google.com/search?q=earliest+written+music+notation+Mesopotamia" target="_blank" rel="noopener noreferrer">read more ↗</a>
+            <span class="tag">ancient</span>
+          </div>
+        </article>
+
+        <article class="moment left" data-era="ancient" data-index="03">
+          <span class="index">03</span><span class="node"></span>
+          <div class="card">
+            <p class="year">800 BCE —</p>
+            <h3>MODES &amp; THEORY</h3>
+            <p class="summary">Greece / harmony / proportion</p>
+            <p class="detail">
+              Pitch becomes mathematics. Scales, intervals, and modes create a
+              vocabulary for explaining why music moves us.
+            </p>
+            <a class="read-more" href="https://www.google.com/search?q=ancient+Greek+music+modes+theory+harmony" target="_blank" rel="noopener noreferrer">read more ↗</a>
+            <span class="tag">ancient</span>
+          </div>
+        </article>
+
+        <article
+          class="moment right"
+          id="classical"
+          data-era="classical"
+          data-index="04"
+        >
+          <span class="index">04</span><span class="node"></span>
+          <div class="card">
+            <p class="year">1450 —</p>
+            <h3>MUSIC IN PRINT</h3>
+            <p class="summary">moveable type / scores / access</p>
+            <p class="detail">
+              Printed scores allow compositions to travel intact. Music leaves
+              the court and begins reaching a wider public.
+            </p>
+            <a class="read-more" href="https://www.google.com/search?q=history+of+printed+sheet+music+printing+press" target="_blank" rel="noopener noreferrer">read more ↗</a>
+            <span class="tag">classical</span>
+          </div>
+        </article>
+
+        <article
+          class="moment left featured"
+          id="recorded"
+          data-era="recorded"
+          data-index="05"
+        >
+          <span class="index">05</span><span class="node"></span>
+          <div class="card">
+            <p class="hero-year">1877</p>
+            <h3>THE PHONOGRAPH</h3>
+            <p class="summary">phonograph / capture / reproduction</p>
+            <div class="signal" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <p class="detail">
+              For the first time, a performance can outlive its performer.
+              Listening becomes repeatable, collectible, and commercial.
+            </p>
+            <a class="read-more" href="https://www.google.com/search?q=1877+phonograph+invention+history+Thomas+Edison" target="_blank" rel="noopener noreferrer">read more ↗</a>
+            <span class="tag">recorded</span>
+          </div>
+        </article>
+
+        <article
+          class="moment right"
+          id="digital"
+          data-era="digital"
+          data-index="06"
+        >
+          <span class="index">06</span><span class="node"></span>
+          <div class="card">
+            <p class="year">1982 —</p>
+            <h3>DIGITAL AUDIO</h3>
+            <p class="summary">sampling / codecs / new fidelity</p>
+            <p class="detail">
+              Sound becomes data. Perfect copies, compact discs, samplers, and
+              software reshape both the studio and the listener.
+            </p>
+            <a class="read-more" href="https://www.google.com/search?q=1982+digital+audio+compact+disc+history" target="_blank" rel="noopener noreferrer">read more ↗</a>
+            <span class="tag">digital</span>
+          </div>
+        </article>
+
+        <article class="moment left" data-era="digital" data-index="07">
+          <span class="index">07</span><span class="node"></span>
+          <div class="card">
+            <p class="year">1999 —</p>
+            <h3>MP3 &amp; FILE SHARING</h3>
+            <p class="summary">MP3 / peer-to-peer / portable</p>
+            <p class="detail">
+              A song no longer needs a physical object. Catalogs become
+              searchable and distribution moves at network speed.
+            </p>
+            <a class="read-more" href="https://www.google.com/search?q=history+of+MP3+music+file+sharing+1999" target="_blank" rel="noopener noreferrer">read more ↗</a>
+            <span class="tag">digital</span>
+          </div>
+        </article>
+
+        <article class="moment right" id="now" data-era="now" data-index="08">
+          <span class="index">08</span><span class="node"></span>
+          <div class="card">
+            <p class="year">2026 —</p>
+            <h3>MUSIC IN THE AI ERA</h3>
+            <p class="summary">streaming / spatial / generative</p>
+            <p class="detail">
+              Creation and listening converge. Every connected device can be a
+              studio, an instrument, or a stage.
+            </p>
+            <a class="read-more" href="https://www.google.com/search?q=music+in+the+AI+era+2026+generative+music" target="_blank" rel="noopener noreferrer">read more ↗</a>
+            <span class="tag">now</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="closing wrap">
+        <p class="eyebrow">THE NEXT TRACK</p>
+        <h2>history is still recording.</h2>
+        <a href="#origins">↑ return to origins</a>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">
+      <span>music history / 40,000 BCE—2026</span>
+      <span>built by prodbyquality</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
